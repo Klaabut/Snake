@@ -1,0 +1,10 @@
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\bin\Debug\netcoreapp2.2\Frame.deps.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\bin\Debug\netcoreapp2.2\Frame.runtimeconfig.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\bin\Debug\netcoreapp2.2\Frame.runtimeconfig.dev.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\bin\Debug\netcoreapp2.2\Frame.dll
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\bin\Debug\netcoreapp2.2\Frame.pdb
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\obj\Debug\netcoreapp2.2\Frame.csproj.CoreCompileInputs.cache
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\obj\Debug\netcoreapp2.2\Frame.AssemblyInfoInputs.cache
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\obj\Debug\netcoreapp2.2\Frame.AssemblyInfo.cs
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\obj\Debug\netcoreapp2.2\Frame.dll
+C:\Users\karlp\Desktop\VS\SnakeDraft\Frame\obj\Debug\netcoreapp2.2\Frame.pdb

@@ -1,0 +1,11 @@
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp2.2\SnakeDraft.deps.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp2.2\SnakeDraft.runtimeconfig.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp2.2\SnakeDraft.runtimeconfig.dev.json
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp2.2\SnakeDraft.dll
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp2.2\SnakeDraft.pdb
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.csprojAssemblyReference.cache
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.csproj.CoreCompileInputs.cache
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.AssemblyInfoInputs.cache
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.AssemblyInfo.cs
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.dll
+C:\Users\karlp\Desktop\VS\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp2.2\SnakeDraft.pdb
