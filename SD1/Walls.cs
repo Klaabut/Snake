@@ -8,23 +8,17 @@ namespace SD1
     {
         Random rnd = new Random();
         List<Figure> wallList;
-        int mapWidth;
-        int mapHeight;
-        char symbol;
+       
 
-        public Obstacle(int _mapWidth, int _mapHeight, char _symbol)
-        {
-            mapWidth = _mapWidth;
-            mapHeight = _mapHeight;
-            symbol = _symbol;
-        }
+
+
         public Walls(int mapWidth, int mapHeight)
         {
             wallList = new List<Figure>();
             HorizontalLine topLine = new HorizontalLine(0, mapWidth-2, 0, '#');
             HorizontalLine bottomLine = new HorizontalLine(0, mapWidth - 2, mapHeight-1, '#');
             VerticalLine leftLine = new VerticalLine(0, mapHeight-1, 0, '#');
-            VerticalLine rightLine = new VerticalLine(0, mapHeight-1, mapWidth-1, '#');
+            VerticalLine rightLine = new VerticalLine(mapWidth-1, mapHeight-1, 0, '#');
             wallList.Add(topLine);
             wallList.Add(bottomLine);
             wallList.Add(leftLine);
@@ -50,12 +44,12 @@ namespace SD1
             }
             return false;
         }
-        public Point DrawRandomObst()
+        /*public Point DrawRandomObst()
         {
             int x = rnd.Next(2, mapWidth - 2);
             int y = rnd.Next(2, mapHeight - 2);
             
             return new Point(x, y, symbol);
-        }
+        }*/
     }
 }

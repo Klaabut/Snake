@@ -62,45 +62,45 @@ namespace SD1
     }
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             int score = 0;
+            int speed = 200;
 
 
 
-
-            Console.SetWindowSize(80, 25);
-            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(100, 25);
+            Console.SetBufferSize(100, 25);
 
             Walls walls = new Walls(80, 25);
             walls.DrawWalls();
 
-           /* HorizontalLine topLine = new HorizontalLine(0, 78, 0, '*');
-            topLine.DrawFigure();
-            HorizontalLine bottomLine = new HorizontalLine(0, 78, 24, '*');
-            bottomLine.DrawFigure();
-            VerticalLine leftLine = new VerticalLine(0, 24, 0, '*');
-            leftLine.DrawFigure();
-            VerticalLine rightLine = new VerticalLine(78, 24, 0, '*');
-            rightLine.DrawFigure();*/
+            /* HorizontalLine topLine = new HorizontalLine(0, 78, 0, '*');
+             topLine.DrawFigure();
+             HorizontalLine bottomLine = new HorizontalLine(0, 78, 24, '*');
+             bottomLine.DrawFigure();
+             VerticalLine leftLine = new VerticalLine(0, 24, 0, '*');
+             leftLine.DrawFigure();
+             VerticalLine rightLine = new VerticalLine(78, 24, 0, '*');
+             rightLine.DrawFigure();*/
 
 
             Point tail = new Point(6, 5, '*');
             Snake snake = new Snake(tail, 4, Direction.RIGHT);
             snake.DrawFigure();
-            Walls obstaclesBuilt = new Obstacle(80, 25, '¤');
+
             FoodCatering foodCatered = new FoodCatering(80, 25, '$');
             Point food = foodCatered.CaterFood();
             food.Draw();
-            
+
             while (true)
             {
                 if (walls.IsHitByFigure(snake))
                 {
                     Console.Clear();
                     WriteGameOver();
-                    if (score > 1)
+                    if (score > 1 || score == 0)
                     {
                         Console.WriteLine($" You got {score} points!");
                     }
@@ -111,13 +111,15 @@ namespace SD1
                     break;
                     
                 }
+                WriteOngoinScore(score, speed);
                 if (snake.Eat(food))
                 {
                     food = foodCatered.CaterFood();
-                   
+                    
                     score++;
                     food.Draw();
-
+                    speed -= 10;
+                    
                 }
                 else
                 {
@@ -149,7 +151,7 @@ namespace SD1
                     }
                 }*/
                 
-                Thread.Sleep(150);
+                Thread.Sleep(speed);
             }
             
 
@@ -175,6 +177,18 @@ namespace SD1
             Console.WriteLine(text);
         }
 
+        
+        public static void WriteOngoinScore(int score, int speed)
+        {
+            int xOffset = 81;
+            int yOffset = 10;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.SetCursorPosition(xOffset, yOffset++);
+            ShowMessage("________________", xOffset, yOffset++);
+            ShowMessage($"Current score: {score}", xOffset, yOffset++);
+            ShowMessage($"Current speed: {speed}", xOffset, yOffset++);
+            ShowMessage("________________", xOffset, yOffset++);
+        }
 
 
     }

@@ -9,3 +9,14 @@ C:\Users\karlp\Desktop\VS\SnakeDraft\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInf
 C:\Users\karlp\Desktop\VS\SnakeDraft\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInfo.cs
 C:\Users\karlp\Desktop\VS\SnakeDraft\SD1\obj\Debug\netcoreapp2.2\SD1.dll
 C:\Users\karlp\Desktop\VS\SnakeDraft\SD1\obj\Debug\netcoreapp2.2\SD1.pdb
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.csprojAssemblyReference.cache
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.csproj.CoreCompileInputs.cache
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInfoInputs.cache
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInfo.cs
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.dll
+C:\Users\Karl\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.pdb
+C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.deps.json
+C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.json
+C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.dev.json
+C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.dll
+C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.pdb

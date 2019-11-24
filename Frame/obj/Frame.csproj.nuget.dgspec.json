@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karlp\\Desktop\\VS\\SnakeDraft\\Frame\\Frame.csproj": {}
+    "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karlp\\Desktop\\VS\\SnakeDraft\\Frame\\Frame.csproj": {
+    "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karlp\\Desktop\\VS\\SnakeDraft\\Frame\\Frame.csproj",
+        "projectUniqueName": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
         "projectName": "Frame",
-        "projectPath": "C:\\Users\\karlp\\Desktop\\VS\\SnakeDraft\\Frame\\Frame.csproj",
-        "packagesPath": "C:\\Users\\karlp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karlp\\Desktop\\VS\\SnakeDraft\\Frame\\obj\\",
+        "projectPath": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
+        "packagesPath": "C:\\Users\\Karl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\karlp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Karl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
