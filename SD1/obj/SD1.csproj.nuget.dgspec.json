@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "NAudio": {
+              "target": "Package",
+              "version": "[1.9.0, )"
             }
           },
           "imports": [

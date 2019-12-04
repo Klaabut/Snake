@@ -1,5 +1,12 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
+
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using NAudio.Wave;
+
 namespace SD1
 {
     class Point
@@ -7,7 +14,7 @@ namespace SD1
         public int x;
         public int y;
         public char symbol;
-        
+        public string  file = "MGSBM.mp3";
 
 
         public Point(int _x, int _y, char _symbol)
@@ -65,10 +72,15 @@ namespace SD1
 
         static void Main(string[] args)
         {
+            
+
+
             int score = 0;
             int speed = 200;
+           
+            int speedLevel = 0;
 
-
+            
 
             Console.SetWindowSize(100, 25);
             Console.SetBufferSize(100, 25);
@@ -96,9 +108,11 @@ namespace SD1
 
             while (true)
             {
+                
                 if (walls.IsHitByFigure(snake))
                 {
                     Console.Clear();
+                    
                     WriteGameOver();
                     if (score > 1 || score == 0)
                     {
@@ -108,17 +122,20 @@ namespace SD1
                     {
                         Console.WriteLine($"You got {score} point!");
                     }
+                    Sounds.DeathSound();
                     break;
                     
                 }
-                WriteOngoinScore(score, speed);
+                WriteOngoinScore(score, speedLevel);
                 if (snake.Eat(food))
                 {
                     food = foodCatered.CaterFood();
+                   Sounds.GainSound();
+                    score=+ 5;
                     
-                    score++;
                     food.Draw();
                     speed -= 10;
+                    speedLevel++;
                     
                 }
                 else
@@ -132,26 +149,12 @@ namespace SD1
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.ReadUserKey(key.Key);
                 }
-                  /*  if (key.Key == ConsoleKey.LeftArrow)
-                    {
+               
 
-                        snake.Direction = Direction.LEFT;
-                    }
-                    else if (key.Key == ConsoleKey.RightArrow)
-                    {
-                        snake.Direction = Direction.RIGHT;
-                    }
-                    else if (key.Key == ConsoleKey.UpArrow)
-                    {
-                        snake.Direction = Direction.UP;
-                    }
-                    else
-                    {
-                        snake.Direction = Direction.DOWN;
-                    }
-                }*/
+
                 
                 Thread.Sleep(speed);
+                
             }
             
 
@@ -178,18 +181,18 @@ namespace SD1
         }
 
         
-        public static void WriteOngoinScore(int score, int speed)
+        public static void WriteOngoinScore(int score, int speedLevel)
         {
             int xOffset = 81;
             int yOffset = 10;
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(xOffset, yOffset++);
             ShowMessage("________________", xOffset, yOffset++);
             ShowMessage($"Current score: {score}", xOffset, yOffset++);
-            ShowMessage($"Current speed: {speed}", xOffset, yOffset++);
+            ShowMessage($"Current speed: {speedLevel}", xOffset, yOffset++);
             ShowMessage("________________", xOffset, yOffset++);
         }
-
+        
 
     }
 }
