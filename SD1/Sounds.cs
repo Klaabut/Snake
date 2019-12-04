@@ -11,7 +11,7 @@ namespace SD1
         public static void PlayBackgroundMusic()
         {
             using (var waveOut = new WaveOutEvent())
-            using (var wavReader = new WaveFileReader(@"c:\users\karl\desktop\VS\Snake\MGSBM.wav"))
+            using (var wavReader = new WaveFileReader("MGSBM.wav"))
             {
                 waveOut.Init(wavReader);
                 waveOut.Play();
@@ -24,7 +24,7 @@ namespace SD1
         public static void DeathSound()
         {
             using (var waveOut = new WaveOutEvent())
-            using (var wavReader = new WaveFileReader(@"c:\users\karl\desktop\VS\Snake\DS.wav"))
+            using (var wavReader = new WaveFileReader("DS.wav"))
             {
                 waveOut.Init(wavReader);
                 waveOut.Play();
@@ -35,7 +35,7 @@ namespace SD1
         public static void GainSound()
         {
             using (var waveOut = new WaveOutEvent())
-            using (var wavReader = new WaveFileReader(@"c:\users\karl\desktop\VS\Snake\GS.wav"))
+            using (var wavReader = new WaveFileReader("GS.wav"))
             {
                 waveOut.Init(wavReader);
                 waveOut.Play();
