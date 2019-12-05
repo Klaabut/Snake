@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,6 @@ namespace SD1
         public int x;
         public int y;
         public char symbol;
-        public string  file = "MGSBM.mp3";
 
 
         public Point(int _x, int _y, char _symbol)
@@ -105,65 +104,66 @@ namespace SD1
             FoodCatering foodCatered = new FoodCatering(80, 25, '$');
             Point food = foodCatered.CaterFood();
             food.Draw();
+            Stopwatch stopwatch = new Stopwatch();
 
-            while (true)
+            for (int i = 0; i < 1000; i++)
             {
-                
-                if (walls.IsHitByFigure(snake))
+                while (true)
                 {
-                    Console.Clear();
-                    
-                    WriteGameOver();
-                    if (score > 1 || score == 0)
+
+                    Stopwatch.StartNew();
+
+                    if (walls.IsHitByFigure(snake))
                     {
-                        Console.WriteLine($" You got {score} points!");
+                        Console.Clear();
+
+                        WriteGameOver(score, speedLevel);
+                        
+                        Sounds.DeathSound();
+                        break;
+
+                    }
+                    WriteOngoinScore(score, speedLevel);
+                    if (snake.Eat(food))
+                    {
+
+
+                        food = foodCatered.CaterFood();
+                       
+                        score += 5;
+
+                        food.Draw();
+                        speed -= 10;
+                        speedLevel++;
+                        Sounds.GainSound();
                     }
                     else
                     {
-                        Console.WriteLine($"You got {score} point!");
+                        snake.MoveSnake();
                     }
-                    Sounds.DeathSound();
-                    break;
-                    
-                }
-                WriteOngoinScore(score, speedLevel);
-                if (snake.Eat(food))
-                {
-                    food = foodCatered.CaterFood();
-                   Sounds.GainSound();
-                    score=+ 5;
-                    
-                    food.Draw();
-                    speed -= 10;
-                    speedLevel++;
-                    
-                }
-                else
-                {
-                    snake.MoveSnake();
-                }
-                
-                if (Console.KeyAvailable)
-                {
-                    
-                    ConsoleKeyInfo key = Console.ReadKey();
-                    snake.ReadUserKey(key.Key);
-                }
-               
+
+                    if (Console.KeyAvailable)
+                    {
+
+                        ConsoleKeyInfo key = Console.ReadKey();
+                        snake.ReadUserKey(key.Key);
+                    }
 
 
-                
-                Thread.Sleep(speed);
-                
+
+
+                    Thread.Sleep(speed);
+
+                }
             }
-            
+            stopwatch.Stop();
 
-           
+            TimeSpan Stopper = stopwatch.Elapsed;
 
 
 
         }
-            public static void WriteGameOver()
+            public static void WriteGameOver(int score, int speedLevel)
             {
             int xOffset = 35;
             int yOffset = 8;
@@ -171,6 +171,9 @@ namespace SD1
             Console.SetCursorPosition(xOffset, yOffset++);
             ShowMessage("________________", xOffset, yOffset++);
             ShowMessage("GAME OVER", xOffset, yOffset++);
+            ShowMessage($"Final score: {score}", xOffset, yOffset++);
+            ShowMessage($"Top speed: {speedLevel}", xOffset, yOffset++);
+           // ShowMessage($"Time:{Stopper}", xOffset, yOffset++);
             ShowMessage("________________", xOffset, yOffset++);
 
         }
@@ -190,6 +193,7 @@ namespace SD1
             ShowMessage("________________", xOffset, yOffset++);
             ShowMessage($"Current score: {score}", xOffset, yOffset++);
             ShowMessage($"Current speed: {speedLevel}", xOffset, yOffset++);
+         //   ShowMessage($"Time: {}", xOffset, yOffset);
             ShowMessage("________________", xOffset, yOffset++);
         }
         

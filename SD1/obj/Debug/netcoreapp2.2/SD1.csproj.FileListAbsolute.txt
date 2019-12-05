@@ -20,3 +20,13 @@ C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.jso
 C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.dev.json
 C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.dll
 C:\Users\Karl\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.pdb
+C:\Users\karlp\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.deps.json
+C:\Users\karlp\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.json
+C:\Users\karlp\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.runtimeconfig.dev.json
+C:\Users\karlp\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.dll
+C:\Users\karlp\Desktop\VS\Snake\SD1\bin\Debug\netcoreapp2.2\SD1.pdb
+C:\Users\karlp\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.csprojAssemblyReference.cache
+C:\Users\karlp\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInfoInputs.cache
+C:\Users\karlp\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.AssemblyInfo.cs
+C:\Users\karlp\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.dll
+C:\Users\karlp\Desktop\VS\Snake\SD1\obj\Debug\netcoreapp2.2\SD1.pdb

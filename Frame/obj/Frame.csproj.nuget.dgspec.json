@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {}
+    "C:\\Users\\karlp\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {
+    "C:\\Users\\karlp\\Desktop\\VS\\Snake\\Frame\\Frame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
+        "projectUniqueName": "C:\\Users\\karlp\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
         "projectName": "Frame",
-        "projectPath": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
-        "packagesPath": "C:\\Users\\Karl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karl\\Desktop\\VS\\Snake\\Frame\\obj\\",
+        "projectPath": "C:\\Users\\karlp\\Desktop\\VS\\Snake\\Frame\\Frame.csproj",
+        "packagesPath": "C:\\Users\\karlp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\karlp\\Desktop\\VS\\Snake\\Frame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Karl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karlp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -51,10 +51,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
